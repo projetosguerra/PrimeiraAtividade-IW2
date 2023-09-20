@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <script src="js/login.js"></script>
+    <script src="js/main.js"></script>
+    
+    <title>OompaLupi</title>
+</head>
+<body>
+
+  <div id="demo">
+    <div class="screen">
+      <div class="screen__content">
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input placeholder="Login" type="text" id="login" name="login" required>
+              </div>
+              <div class="input-field col s6">
+                <input placeholder="Senha" type="password" id="senha" name="senha" required>
+              </div>
+            </div>
+            <div class="input-field col s12">
+                <input placeholder="Nome completo" type="text" id="nomecompleto" name="nomecompleto" required>
+            </div>
+            <div class="input-field col s12">
+              <input placeholder="Telefone" type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="input-field col s12">
+              <input placeholder="Email" type="email" id="email" name="email" required>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input placeholder="CEP" type="text" id="cep" name="cep" required>
+              </div>
+              <button class="button login__submit btn-buscar" type="button" onclick="buscarEndereco()">Buscar</button><br>
+            </div>
+              
+            <div class="input-field col s12">
+              <input placeholder="Logradouro" type="text" id="logradouro" name="logradouro" required>
+            </div>
+            <div class="input-field col s6">
+              <input placeholder="Estado" type="text" id="estado" name="estado" required>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input placeholder="Número" type="text" id="numero" name="numero" required>
+              </div>
+              <div class="input-field col s6">
+                <input placeholder="Complemento" type="text" id="complemento" name="complemento">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input placeholder="Bairro" type="text" id="bairro" name="bairro" required>
+              </div>
+              <div class="input-field col s6">
+                <input placeholder="Cidade" type="text" id="cidade" name="cidade" required>
+              </div>
+            </div>
+          </form>
+        </div>
+        <button onclick="cadastrar()" class="button login__submit" id="cadastro">
+          <span class="button__text">Cadastrar</span>
+        </button>		
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>		
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>
+      </div>		
+    </div>
+  </div>
+
+</body>
+</html>
